@@ -1,0 +1,21 @@
+:root {
+  --fnz-background: #292d32;
+  --fnz-background-secondary: #702bfe;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0c0c0c;
+}
