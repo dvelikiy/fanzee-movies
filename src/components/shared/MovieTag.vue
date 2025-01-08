@@ -45,10 +45,17 @@ const tagClasses = computed(() => {
 
 <style scoped>
 .tag {
+  --fnz-tag-good: #039c55;
+  --fnz-tag-average: var(--fnz-background-secondary);
+  --fnz-tag-bad: #e81a0c;
+
+  --fnz-tag-genre: #2c81fb;
+  --fnz-tag-duration: var(--fnz-background-secondary);
+
   display: flex;
   align-items: baseline;
   gap: 4px;
-  color: white;
+  color: var(--fnz-color-primary);
   border-radius: 8px;
   padding: 2px 6px;
   text-transform: capitalize;
@@ -58,22 +65,22 @@ const tagClasses = computed(() => {
 }
 
 .tag--score-good {
-  background-color: #039c55;
+  background-color: var(--fnz-tag-good);
 }
 
 .tag--score-average {
-  background-color: #702bfe;
+  background-color: var(--fnz-tag-average);
 }
 
 .tag--score-bad {
-  background-color: #e81a0c;
+  background-color: var(--fnz-tag-bad);
 }
 
 .tag--genre {
-  background-color: #2c81fb;
+  background-color: var(--fnz-tag-genre);
 }
 
 .tag--duration {
-  background-color: #702bfe;
+  background-color: var(--fnz-tag-duration);
 }
 </style>

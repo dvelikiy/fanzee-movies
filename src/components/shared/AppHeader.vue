@@ -18,7 +18,7 @@ import { RouterLink } from 'vue-router'
   top: 0;
   z-index: 1;
   height: 100px;
-  background-color: #292d32;
+  background-color: var(--fnz-background-primary);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 0 48px;
 }
@@ -29,13 +29,13 @@ import { RouterLink } from 'vue-router'
   line-height: 37.5px;
 
   a {
-    color: white;
+    color: var(--fnz-color-primary);
     text-decoration: none;
 
     &:hover,
     &:focus,
     &:active {
-      color: white;
+      color: var(--fnz-color-primary);
     }
   }
 }

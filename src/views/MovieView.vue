@@ -120,7 +120,7 @@ const tags: ComputedRef<MovieTagType[]> = computed(() => [
 .movie {
   display: flex;
   gap: 64px;
-  color: white;
+  color: var(--fnz-color-primary);
   min-height: calc(100vh - 198px);
 }
 
@@ -174,6 +174,6 @@ const tags: ComputedRef<MovieTagType[]> = computed(() => [
 }
 
 .movie__actor {
-  color: white;
+  color: var(--fnz-color-primary);
 }
 </style>

@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   height: 98px;
-  background-color: #292d32;
+  background-color: var(--fnz-background-primary);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 0 48px;
 }
@@ -32,19 +32,19 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
-  color: white;
+  color: var(--fnz-color-primary);
 }
 
 .app-footer__description {
   font-size: 14px;
   font-weight: 500;
   line-height: 16.41px;
-  color: white;
+  color: var(--fnz-color-primary);
 }
 
 .app-footer__phone {
   display: block;
-  color: white;
+  color: var(--fnz-color-primary);
   margin-bottom: 4px;
 }
 </style>

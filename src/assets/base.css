@@ -1,6 +1,8 @@
 :root {
-  --fnz-background: #292d32;
+  --fnz-background-primary: #292d32;
   --fnz-background-secondary: #702bfe;
+  --fnz-background-tertiary: #0c0c0c;
+  --fnz-color-primary: #ffffff;
 }
 
 *,
@@ -17,5 +19,5 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0c0c0c;
+  background-color: var(--fnz-background-tertiary);
 }

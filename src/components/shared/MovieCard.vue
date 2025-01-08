@@ -54,7 +54,7 @@ const replaceWithBackupImage = (event: Event) => {
 
 .card__inner {
   padding: 12px;
-  background: var(--fnz-background);
+  background: var(--fnz-background-primary);
   transition: transform 0.2s ease;
   border-radius: 16px;
 }
@@ -85,7 +85,7 @@ const replaceWithBackupImage = (event: Event) => {
   font-size: 28px;
   line-height: 32.81px;
   font-weight: 700;
-  color: white;
+  color: var(--fnz-color-primary);
   margin-bottom: 4px;
 }
 
@@ -96,7 +96,7 @@ const replaceWithBackupImage = (event: Event) => {
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin-bottom: 12px;
-  color: white;
+  color: var(--fnz-color-primary);
   font-size: 14px;
   line-height: 16.41px;
   font-weight: 500;
