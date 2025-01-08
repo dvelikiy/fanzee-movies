@@ -44,8 +44,10 @@ const replaceWithBackupImage = (event: Event) => {
   border-radius: 16px;
   background: var(--fnz-background-secondary);
   text-decoration: none;
+}
 
-  &:hover {
+@media (hover: hover) {
+  .card:hover {
     .card__inner {
       transform: translate(-9px, -9px);
     }

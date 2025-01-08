@@ -121,7 +121,6 @@ const tags: ComputedRef<MovieTagType[]> = computed(() => [
   display: flex;
   gap: 64px;
   color: var(--fnz-color-primary);
-  min-height: calc(100vh - 198px);
 }
 
 @media screen and (max-width: 690px) {

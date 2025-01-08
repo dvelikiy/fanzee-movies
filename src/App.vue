@@ -6,8 +6,22 @@ import AppFooter from './components/shared/AppFooter.vue'
 
 <template>
   <AppHeader />
-  <RouterView />
-  <AppFooter />
+  <div class="app-content">
+    <section class="app-content__main">
+      <RouterView />
+    </section>
+    <AppFooter />
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.app-content {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content__main {
+  flex-grow: 1;
+}
+</style>

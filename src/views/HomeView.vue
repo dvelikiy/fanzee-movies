@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import MovieCard from '@/components/shared/MovieCard.vue'
-import { ref, computed, onMounted } from 'vue'
+import type { MovieCardType } from '@/components/shared/typings'
+import { ref, computed, onMounted, type Ref } from 'vue'
 
-const cardList = ref([])
+const cardList: Ref<MovieCardType[]> = ref([])
 
 const cardListLimited = computed(() => cardList.value.slice(0, 16))
 
@@ -39,5 +40,15 @@ onMounted(fetchCardList)
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
   gap: 16px;
+}
+
+@media screen and (max-width: 420px) {
+  .card-list-wrapper {
+    padding: 32px 24px;
+  }
+
+  .card-list {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
