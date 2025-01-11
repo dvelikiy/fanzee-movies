@@ -12,7 +12,7 @@ const tags: ComputedRef<MovieTagType[]> = computed(() => [
 ])
 
 const replaceWithBackupImage = (event: Event) => {
-  const backupImgUrl = 'https://via.placeholder.com/600x600?text=Failed%20To%20Load'
+  const backupImgUrl = '/images/failed-to-load_600x600.png'
   if ((event.target as HTMLImageElement).src != backupImgUrl) {
     ;(event.target as HTMLImageElement).src = backupImgUrl
   }

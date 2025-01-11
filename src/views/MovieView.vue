@@ -53,7 +53,7 @@ onMounted(async () => {
   await fetchMovieData()
 
   if (!(await checkLink(movieData.value.poster))) {
-    const backupImgUrl = 'https://via.placeholder.com/240x320?text=Failed%20To%20Load'
+    const backupImgUrl = '/images/failed-to-load_240x320.png'
     movieData.value.poster = backupImgUrl
   }
 })
